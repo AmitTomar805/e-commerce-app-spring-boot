@@ -1,9 +1,10 @@
 package com.amit.ecommerce.customer;
 
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
-@Service
+@Component
 public class CustomerMapper {
+
     public Customer toCustomer(CustomerRequest request) {
         if (request == null) {
             return null;
@@ -18,6 +19,9 @@ public class CustomerMapper {
     }
 
     public CustomerResponse fromCustomer(Customer customer) {
+        if (customer == null) {
+            return null;
+        }
         return new CustomerResponse(
                 customer.getId(),
                 customer.getFirstname(),
