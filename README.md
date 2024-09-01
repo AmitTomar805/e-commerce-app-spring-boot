@@ -56,7 +56,7 @@ SpringMart is built on a microservices architecture, focusing on:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/springmart.git
+   git clone https://github.com/AmitTomar805/e-commerce-app-spring-boot.git
    cd springmart
    ```
 
